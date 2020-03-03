@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node dist/server.js",
-    "build": "tsc -p"
+    "build": "tsc -p . --watch"
   },
   "author": "Adib Zidan",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^13.7.7"
+  }
 }

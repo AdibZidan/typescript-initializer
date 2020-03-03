@@ -1,19 +1,22 @@
 # Instructions on setting up TypeScript
 
-1. `npm i -g typescript` *Downloads & Installs the latest version of TypeScript*
-2. `tsc --init` *Creates a TypeScript configuration file*
-3. Inside the *tsconfig.json* file:
+1. `npm init -y` *Initializes a **package.json** file*
+2. `npm i -g typescript` *Downloads & Installs the latest version of **TypeScript***
+3. `tsc --init` *Creates a TypeScript configuration file called **tsconfig.json***
+4. Inside the **tsconfig.json** file:
    - Change the `target` property to `es6` - line 5
    - Uncomment both *outDir* & *rootDir* - lines 15 and 16
-   - *Optional* use `./dist` for `outDir` & `./src` for `rootDir`
+   - Use `./dist` for `outDir` & `./src` for `rootDir`
    - Uncomment `moduleResolution` property - line 42
-4. Create a *src* folder
-5. Initialize a *package.json* file using `npm init -y` command
-6. Inside *package.json* file; add `"start": "node dist/server.js"` & `"build": "tsc -p ."` below the `"scripts"` object - line 6
+5. Create a **src** folder
+6. Inside **package.json** file; below the `"scripts"` object - line 6:
+   - Add `"start": "node dist/server.js"` for servers
+   - Add `"watch": "tsc -p . --watch"` watches and compiles all your **TypeScript** files into **JavaScript** after you save automatically
 
 ## To compile and run
 
-- To compile TypeScript into JavaScript; use `npm run build`
+Make sure to have an existing **TypeScript** file to execute the following command:
+- To compile TypeScript into JavaScript; use `npm run watch`
 
 ## To update npm and install types
 

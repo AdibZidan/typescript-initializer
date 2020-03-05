@@ -3,7 +3,7 @@
 After cloning this project:
 `npm i` *Downloads all the needed node modules and configures this project*
 
-1. **Make sure to download [Node.JS](https://nodejs.org/en/) first**
+1. **Make sure to download [Node.JS & NPM](https://nodejs.org/en/) first**
 2. `npm init -y` *Initializes a **package.json** file*
 3. `npm i -g typescript` *Downloads & Installs the latest version of **TypeScript***
 4. `tsc --init` *Creates a TypeScript configuration file called **tsconfig.json***
@@ -32,8 +32,13 @@ Make sure to have an existing **TypeScript** file to execute the following comma
 1. `npm i -D jest typescript --force` *Downloads **Jest***
 2. `npm i -D ts-jest @types/jest` *Downloads **Jest** types*
 3. `npx ts-jest config:init` *Creates a **jest.config.js** file*
+*Make sure to remove **testEnvironment: 'node'***
 *You can read further about configuring **jest.config.js** [here](https://huafu.github.io/ts-jest/user/config/diagnostics)*
 4. Add `"test": "jest"` inside **package.json**
 5. Use `npm run test` to initialize both **JavaScript** and **TypeScript** tests simultaneously
 
-`Updated on the 3rd of March, 2020 @ 9:27 P.M`
+
+## *Available NPM commands are in package.json under the scripts object*
+
+
+`Updated on the 5th of March, 2020 @ 9:07 P.M`

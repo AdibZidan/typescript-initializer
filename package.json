@@ -4,9 +4,11 @@
   "description": "Initializing any JavaScript project with the help of TypeScript",
   "main": "index.js",
   "scripts": {
-    "start": "node dist/server.js",
-    "watch": "tsc -p . --watch",
-    "test": "jest"
+    "start": "tsc -p .",
+    "start:dev": "tsc -p . --watch",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "author": "Adib Zidan",
   "license": "ISC",

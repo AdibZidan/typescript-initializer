@@ -1,8 +1,9 @@
 # Instructions on setting up TypeScript
 
-After cloning this project:
-`npm i` *Downloads all the needed node modules and configures this project*
+### After cloning this project:
+`npm i` *Downloads all the needed node modules and configures this project without the need of following the instructions below*
 
+### In-depth instructions:
 1. **Make sure to download [Node.JS & NPM](https://nodejs.org/en/) first**
 2. `npm init -y` *Initializes a **package.json** file*
 3. `npm i -g typescript` *Downloads & Installs the latest version of **TypeScript***
@@ -15,16 +16,16 @@ After cloning this project:
 6. Create a **src** folder
 7. Inside **package.json** file; below the `"scripts"` object - line 6:
    - Add `"start": "node dist/server.js"` for your server
-   - Add `"watch": "tsc -p . --watch"` watches and compiles all your **TypeScript** files into **JavaScript** after you save automatically
+   - Add `"start:dev": "tsc -p . --watch"` watches and compiles all your **TypeScript** files into **JavaScript** after you save automatically
 
 ## To compile and run
 
 Make sure to have an existing **TypeScript** file to execute the following command:
-- To compile TypeScript into JavaScript; use `npm run watch`
+- To compile TypeScript into JavaScript; use `npm run start:dev`
 
 ## To update npm and install types
 
-- Run `npm i -g npm` to update npm to the latest version
+- Run `npm i -g npm` to install/update npm to the latest version
 - Run `npm i @types/node` to install node types
 
 ## To add unit tests functionality using Jest
@@ -41,4 +42,4 @@ Make sure to have an existing **TypeScript** file to execute the following comma
 ## *Available NPM commands are in package.json under the scripts object*
 
 
-`Updated on the 5th of March, 2020 @ 9:07 P.M`
+`Updated on the 13th of June, 2020 @ 10:01 P.M`

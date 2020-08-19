@@ -1,7 +1,5 @@
 export class NumberGenerator {
 
-  constructor() { }
-
   public generateNumbers(amount: number): number[] {
     const generatedNumbers: number[] = [];
 

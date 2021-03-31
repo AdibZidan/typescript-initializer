@@ -1,4 +1,4 @@
-import { NumberGenerator } from '../modules/NumberGenerator';
+import { NumberGenerator } from '../utilities/NumberGenerator';
 
 describe('Number Generator', () => {
 

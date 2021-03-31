@@ -1,7 +1,7 @@
 {
-  "name": "typescript",
+  "name": "typescript-initializer",
   "version": "1.0.0",
-  "description": "Initializing any JavaScript project with the help of TypeScript",
+  "description": "Initialize any JavaScript project with the help of TypeScript",
   "main": "index.js",
   "scripts": {
     "start": "tsc -p .",
@@ -13,12 +13,12 @@
   "author": "Adib Zidan",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^13.7.7"
+    "@types/node": "^14.14.37"
   },
   "devDependencies": {
-    "@types/jest": "^25.1.3",
-    "jest": "^25.1.0",
-    "ts-jest": "^26.2.0",
-    "typescript": "^3.8.3"
+    "@types/jest": "^26.0.22",
+    "jest": "^26.6.3",
+    "ts-jest": "^26.5.4",
+    "typescript": "^4.2.3"
   }
 }
